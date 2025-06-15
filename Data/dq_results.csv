@@ -1,0 +1,6 @@
+job_id,rule_name,result,error_message,timestamp
+J001,customer_id_not_null,FAIL,"Nulls found",2024-06-10 10:05
+J003,order_id_format_check,FAIL,"Invalid format",2024-06-12 11:04
+J002,sales_amount_positive,PASS,,2024-06-11 09:10
+J004,sales_date_valid,PASS,,2024-06-13 14:15
+J005,inventory_id_unique,PASS,,2024-06-14 12:05
