@@ -2,16 +2,22 @@ import pandas as pd
 import requests
 #from agent_core import call_openai_custom
 from pathlib import Path
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load .env file
+
+incubator_endpoint = os.getenv("INCUBATOR_ENDPOINT")
+incubator_key = os.getenv("INCUBATOR_KEY")
+model = os.getenv("MODEL")
+api_version = os.getenv("API_VERSION")
+
  
 # ---- CONFIG ----
 DATA_DIR = Path(r"C:\Users\RT176FE\OneDrive - EY\Desktop\Debugger\Data")
 PROMPT_HEADER = "Job Diagnostic Report Request\n"
- 
-incubator_endpoint = "https://eyq-incubator.asiapac.fabric.ey.com/eyq/as/api"
-incubator_key = "4NTdqAvihVLC454MyrY2bSyFXUuybVOn"
-model = "gpt-4-turbo"
-api_version = "2023-05-15"
- 
+
  
 # ---- Step 1: Load Control Tables ----
 def load_control_tables():
