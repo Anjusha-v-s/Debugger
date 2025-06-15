@@ -4,7 +4,7 @@ import requests
 from pathlib import Path
  
 # ---- CONFIG ----
-DATA_DIR = Path("C:\\Users\\WJ767BD\\OneDrive - EY\\Documents\\Agent Databricks POC\\Data\\")
+DATA_DIR = Path(r"C:\Users\RT176FE\OneDrive - EY\Desktop\Debugger\Data")
 PROMPT_HEADER = "Job Diagnostic Report Request\n"
  
 incubator_endpoint = "https://eyq-incubator.asiapac.fabric.ey.com/eyq/as/api"
@@ -37,7 +37,7 @@ def build_prompt(job_id, job_df, dq_df, batch_df, trigger_df):
  
     prompt += "\nData Quality Results:"
     for _, row in dq.iterrows():
-        prompt += f"\n{row['rule_name']}: {row['result']} ({row['message']})"
+        prompt += f"\n{row['rule_name']}: {row['result']} ({row['error_message']})"
  
     prompt += "\n\nBatch Info:"
     prompt += f"\n{batch.to_string(index=False)}"

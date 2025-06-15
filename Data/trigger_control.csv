@@ -1,0 +1,6 @@
+trigger_id,job_id,status,triggered_by,timestamp
+T001,J001,COMPLETED,scheduler,2024-06-10 09:55
+T002,J002,COMPLETED,manual,2024-06-11 08:50
+T003,J003,FAILED,scheduler,2024-06-12 10:55
+T004,J004,COMPLETED,api,2024-06-13 13:55
+T005,J005,TRIGGERED,scheduler,2024-06-14 11:50
