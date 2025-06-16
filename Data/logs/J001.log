@@ -1,0 +1,5 @@
+2025-06-15 06:00:00 INFO  Starting job: J001 - customer_data_load
+2025-06-15 06:00:01 INFO  Extracting data from source: s3://bucket/data.csv
+2025-06-15 06:00:05 WARN  Null values found in 'customer_id' column
+2025-06-15 06:00:08 ERROR Failed to load data to BigQuery: Invalid schema - missing column 'email'
+2025-06-15 06:00:08 INFO  Job J001 status updated to FAILED
