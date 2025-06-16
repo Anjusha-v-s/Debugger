@@ -1,0 +1,15 @@
+START
+  ↓
+[Load .csv files]
+  ↓
+[Find FAILED jobs in job_control.csv]
+  ↓
+For each FAILED job:
+    ↓
+  [Build Prompt]
+    ↓
+  [Call GPT Model (API)]
+    ↓
+  [Print AI's Diagnosis]
+  ↓
+END
