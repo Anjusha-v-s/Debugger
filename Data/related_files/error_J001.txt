@@ -1,0 +1,8 @@
+Job J001 failed due to the following error:
+
+BigQuery Insert Error:
+Field 'email' is required but missing in some records.
+
+Suggested Fix:
+- Ensure the input CSV contains 'email' column with non-null values.
+- Validate schema before load.
